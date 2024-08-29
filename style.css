@@ -1,0 +1,221 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e; /* Darker background color */
+    color: #ddd; /* Light grey text for contrast */
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0078D7, #00BFA6); /* Blue to Teal gradient */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    animation: slideDown 1s ease-in-out;
+    font-size: 2.5em;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Navigation */
+nav {
+    background-color: #1c1c1c; /* Darker nav background */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav a.active, nav a:hover {
+    background-color: #ff6f61; /* Orange for active/hover state */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    background: #3e3e3e; /* Slightly lighter dark background for contrast */
+    color: #ddd;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #4a4a4a; /* Darker content background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h2, h3 {
+    color: #00BFA6; /* Teal accent for headings */
+    margin-bottom: 10px;
+}
+
+ul.contributors-list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+ul.contributors-list li {
+    font-size: 1.2em;
+    padding: 5px 0;
+    color: #fff; /* White text for visibility */
+}
+
+/* Download Item */
+.download-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #555; /* Background color for download items */
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.download-item:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.download-button {
+    background-color: #ff6f61; /* Vibrant orange color */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e95e52; /* Darker shade on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Warning Section */
+#warning {
+    background-color: #ff4c4c; /* Red background for warning */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#warning h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#warning p {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    background-color: #0078D7; /* Consistent with header */
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .download-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download-button {
+        margin-top: 10px;
+        width: 80%;
+    }
+}

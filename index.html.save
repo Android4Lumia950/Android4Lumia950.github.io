@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Phone Styled Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Windows Phone Style Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#sources">Sources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="downloads">
+                <h2>Downloads</h2>
+                <p>Information about available downloads.</p>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Details about the organization.</p>
+            </section>
+            <section id="sources">
+                <h2>Sources</h2>
+                <p>Information about the sources used.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Contact information and form.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Windows Phone Style Website</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body></h
