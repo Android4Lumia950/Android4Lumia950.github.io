@@ -187,16 +187,17 @@ ul.contributors-list li {
 
 /* Footer */
 footer {
-    background-color: #0078D7; /* Consistent with header */
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text color */
     padding: 10px;
     text-align: center;
-    color: #fff;
+    border-top: 2px solid #00BFA6; /* Optional green border for accent */
     width: 100%;
     animation: fadeIn 2s ease-in-out;
     position: relative;
     bottom: 0;
-    width: 100%;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
