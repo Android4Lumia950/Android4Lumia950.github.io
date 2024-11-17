@@ -38,7 +38,6 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     color: #00BFA6; /* Green color for text */
-    text-shadow: 0 0 10px #00BFA6, 0 0 20px #00BFA6; /* Optional glow effect */
 }
 
 /* Ensure consistent styling if any other selectors are interfering */
