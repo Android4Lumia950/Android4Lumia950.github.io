@@ -196,7 +196,7 @@ footer {
     bottom: 0;
     margin-top: auto; /* Ensures footer sticks to the bottom */
     font-size: 14px; /* Optional: adjusts text size */
-    animation: fadeIn 2s ease-in-out;
+    animation: none;
 }
 
 @keyframes fadeIn {
