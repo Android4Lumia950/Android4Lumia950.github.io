@@ -47,7 +47,6 @@ header h1 {
     animation: slideDown 1s ease-in-out;
 }
 
-
 @keyframes slideDown {
     from { transform: translateY(-100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -255,6 +254,10 @@ footer {
 
 .what-works-item.failure .icon {
     color: #ff4c4c; /* Red for failure (cross) */
+}
+
+.what-works-item.warning .icon {
+    color: #ffcc00; /* Yellow for warning (⚠️) */
 }
 
 .what-works-item p {
