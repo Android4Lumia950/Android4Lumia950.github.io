@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Works - Android4Lumia950</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: black;
+            height: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 70%; /* Adjusted for 70% */
+            background-color: #007bff; /* Blue-ish color */
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .what-works-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .what-works-item .icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,6 +51,12 @@
             </ul>
         </nav>
         <main>
+            <!-- Progress Bar Section -->
+            <section id="progress-bar-section">
+                <div class="progress-container">
+                    <div class="progress-bar">70%</div>
+                </div>
+            </section>
             <section id="what-works-section">
                 <h2>What Works and What Doesn't</h2>
                 <div class="what-works">
@@ -63,6 +99,11 @@
                     <div class="what-works-item success">
                         <span class="icon">&#x2714;</span> <!-- Tick Icon -->
                         <p>Vibration: <strong>Fully working</strong></p>
+                    </div>
+                    <!-- GPS -->
+                    <div class="what-works-item warning">
+                        <span class="icon">⚠️</span> <!-- Warning Icon -->
+                        <p>GPS: <strong>Partially working</strong></p>
                     </div>
                 </div>
             </section>
