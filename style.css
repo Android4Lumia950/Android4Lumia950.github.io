@@ -28,18 +28,25 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #0078D7, #00BFA6); /* Blue to Teal gradient */
+    background-color: #1a1a1a; /* Dark background */
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #00BFA6; /* Green text for "Android4Lumia950" */
     position: relative;
     overflow: hidden;
+    border-bottom: 2px solid #00BFA6; /* Optional: Green border for emphasis */
 }
 
 header h1 {
     margin: 0;
-    animation: slideDown 1s ease-in-out;
     font-size: 2.5em;
+    animation: slideDown 1s ease-in-out;
+    color: #00BFA6; /* Ensure green text */
+}
+
+/* Optional glow effect for the text */
+header h1 {
+    text-shadow: 0 0 10px #00BFA6, 0 0 20px #00BFA6;
 }
 
 @keyframes slideDown {
